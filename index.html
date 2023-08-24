@@ -60,6 +60,40 @@
         footer a:hover {
             color: #FFC107; /* Gold */
         }
+
+       
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #5A189A; /* Using your Vibrant Purple color for the dropdown */
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #FFDACD; /* Peach for text */
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #FF5252; /* Red background for hover */
+    color: #FFC107; /* Gold text color for hover */
+}
+
     </style>
 </head>
 
@@ -70,16 +104,24 @@
         <p>Rock Climbing, Community, Ice Cream!</p>
     </header>
 
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">Activities</a>
-        <a href="#">Stories</a>
+   <nav>
+    <a href="#">Home</a>
+    <a href="#">Activities</a>
+    <a href="#">Stories</a>
+    <div class="dropdown">
         <a href="#">About Us</a>
-        <a href="#">Shop</a>
-        <a href="#">FAQ</a> 
-        <a href="#">Calendar</a> 
-        <a href="#">Contact</a>
-    </nav>
+        <div class="dropdown-content">
+            <a href="#">Our Story</a>
+            <a href="#">Testimonials</a>
+            <a href="#">Gallery</a>
+            <a href="#">Team</a>
+        </div>
+    </div>
+    <a href="#">Shop</a>
+    <a href="#">FAQ</a> 
+    <a href="#">Calendar</a> 
+    <a href="#">Contact</a>
+</nav>
 
     <!-- ... Rest of the content ... -->
 
