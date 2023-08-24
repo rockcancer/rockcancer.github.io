@@ -154,6 +154,45 @@
     background-color: #5A189A; /* Vibrant Purple */
 }
 
+/* Existing styles ... */
+
+/* Mobile Responsive Styles */
+
+/* Adjust container layout for smaller screens */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-content {
+        margin-bottom: 20px;
+        width: 90%; /* Take up most of the screen width */
+    }
+
+    nav {
+        flex-wrap: wrap; /* Allow items to wrap onto the next line */
+    }
+
+    nav a, .dropdown {
+        flex: 1 0 50%; /* They'll take up roughly half the width of the screen */
+        text-align: center; /* Center the text */
+        padding: 10px 0; /* Add some vertical padding */
+    }
+
+    .description, .container {
+        padding-left: 5%; 
+        padding-right: 5%;
+    }
+
+    header h1 {
+        font-size: 1.5em; /* Reduce font size for the title */
+    }
+
+    header p {
+        font-size: 1em; /* Reduce font size for the subtitle */
+    }
+}
 
     </style>
 </head>
