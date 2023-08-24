@@ -111,6 +111,50 @@
 }
 
 
+        .container {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 5%; 
+    background-color: #FFDACD; /* Peach */
+}
+
+.main-content {
+    flex: 1;
+    margin: 0 20px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    background-color: #FFFFFF; /* White to contrast with the Peach background */
+    border-radius: 10px; /* Rounded corners */
+    text-align: center;
+}
+
+.main-content h3 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #5A189A; /* Vibrant Purple */
+}
+
+.main-content p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.main-content a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #FF5252; /* Red */
+    color: #FFDACD; /* Peach */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.main-content a:hover {
+    background-color: #5A189A; /* Vibrant Purple */
+}
+
+
     </style>
 </head>
 
@@ -147,6 +191,23 @@
     <p>Rock Cancer is a free rock climbing program for patients (age 4-25) with cancer or a history of cancer or another chronic medical condition. This program takes place on the third Friday of every month from 4:15-6 pm at Planet Rock Ann Arbor. Participants can bring an additional friend or sibling to rock climb as well. The experience is invaluable, especially immediately post-therapy when self-confidence can be low and de-conditioning can be high. Rock climbing is an adaptive skill that can significantly improve strength and range of motion, making it perfect for recovery and overall well-being.</p>
 </section>
 
+<div class="container">
+    <div class="main-content">
+        <h3>In the News</h3>
+        <p>Latest updates, events, and highlights from Rock Cancer. Stay tuned!</p>
+        <a href="#">Read More</a>
+    </div>
+    <div class="main-content">
+        <h3>Shop</h3>
+        <p>Support us! Purchase Rock Cancer merchandise and show off your support.</p>
+        <a href="#">Shop Now</a>
+    </div>
+    <div class="main-content">
+        <h3>Contact Us</h3>
+        <p>Got questions or feedback? We're here to help and listen!</p>
+        <a href="#">Contact</a>
+    </div>
+</div>
 
 
 
