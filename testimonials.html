@@ -210,6 +210,44 @@
     }
 }
 
+/* Testimonial Style Enhancements */
+.testimonial-box {
+    border: 1px solid #e5e5e5;
+    border-radius: 15px;
+    padding: 20px;
+    transition: box-shadow 0.3s, transform 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(120deg, #FFDACD, #FFFFFF);
+}
+
+.testimonial-box:hover {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+}
+
+.testimonial-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 20px auto; /* Centers the image */
+    display: block; /* Makes margin work for inline img element */
+}
+
+.testimonial-text {
+    font-size: 1.1em;
+    margin-top: 20px;
+}
+
+.testimonial-author {
+    font-size: 1.4em;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #5A189A; /* Vibrant Purple */
+}
+
+
+        
     </style>
 </head>
 
@@ -241,7 +279,7 @@
 
 
 
-   <main>
+  <main>
     <div class="description">
         <h2>Testimonials</h2>
         <p>Read about the experiences of families who have found joy and community through Rock Cancer.</p>
@@ -249,27 +287,28 @@
 
     <div class="container">
         <!-- Testimonial 1 -->
-        <div class="main-content">
-            <img src="testimonial1.jpg" alt="Participant Photo" style="width: 100px; height: 100px; border-radius: 50%;">
-            <h3>Participant 1</h3>
-            <p>"Rock Cancer has been a life-changing experience for us. It not only gave our child a sense of achievement but also gave us a community to rely on."</p>
+        <div class="main-content testimonial-box">
+            <img class="testimonial-image" src="testimonial1.jpg" alt="Participant Photo 1">
+            <h3 class="testimonial-author">Participant 1</h3>
+            <p class="testimonial-text">"Rock Cancer has been a life-changing experience for us. It not only gave our child a sense of achievement but also gave us a community to rely on."</p>
         </div>
 
         <!-- Testimonial 2 -->
-        <div class="main-content">
-            <img src="testimonial2.jpg" alt="Participant Photo" style="width: 100px; height: 100px; border-radius: 50%;">
-            <h3>Participant 2</h3>
-            <p>"This program offered a break from the hospital routine. The climbs were exhilarating and the support we received was immense."</p>
+        <div class="main-content testimonial-box">
+            <img class="testimonial-image" src="testimonial2.jpg" alt="Participant Photo 2">
+            <h3 class="testimonial-author">Participant 2</h3>
+            <p class="testimonial-text">"This program offered a break from the hospital routine. The climbs were exhilarating and the support we received was immense."</p>
         </div>
 
         <!-- Testimonial 3 -->
-        <div class="main-content">
-            <img src="testimonial3.jpg" alt="Participant Photo" style="width: 100px; height: 100px; border-radius: 50%;">
-            <h3>Participant 3</h3>
-            <p>"Rock Cancer provides an incredible platform for both parents and children to escape from the challenges of treatment, even if just for a little while."</p>
+        <div class="main-content testimonial-box">
+            <img class="testimonial-image" src="testimonial3.jpg" alt="Participant Photo 3">
+            <h3 class="testimonial-author">Participant 3</h3>
+            <p class="testimonial-text">"Rock Cancer provides an incredible platform for both parents and children to escape from the challenges of treatment, even if just for a little while."</p>
         </div>
     </div>
 </main>
+
 
 
 
