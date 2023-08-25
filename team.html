@@ -211,24 +211,20 @@
 }
 
 .team-member {
-    display: flex;          /* Changed from block layout to flexbox layout */
-    align-items: center;    /* Center items vertically */
-    justify-content: space-between; /* Separate the image and description */
     padding: 20px;
     background-color: #FFFFFF; /* White background */
     border-radius: 10px; /* Rounded corners */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Box shadow for a lift effect */
     margin: 10px; /* Spacing between the white boxes */
+    text-align: center; /* Center the text inside the box */
 }
 
 .team-member img {
-    flex: 0 0 200px;  /* This ensures that the image stays a consistent size */
     max-width: 100%; /* Make sure the image doesn't overflow the container */
     max-height: 200px; /* Limit the image height */
-    margin-right: 20px; /* Add spacing between image and description */
     border-radius: 10px; /* Rounded corners for images */
+    margin-bottom: 15px; /* Space between the image and the member's name */
 }
-
 
 
 
@@ -299,49 +295,42 @@
 <section class="description">
     <h2>Our Partner Organizations</h2>
     <div class="container">
-        
-        <!-- Planet Rock -->
+        <!-- Sample Volunteer -->
         <div class="team-member">
-            <div class="org-description">  
-                <h3>Planet Rock</h3>
-                <p>Rock Cancer is profoundly grateful to our key partner, Planet Rock, whose generosity and support make our mission possible. Through their unwavering commitment, they've enabled us to host impactful events, providing us with resources, expertise, and an inspiring space where hope and action meet. Simply put, Rock Cancer could not exist without the immense contributions of Planet Rock.</p>
-                <a href="https://planet-rock.com/">Planet Rock</a>
-            </div>
             <img src="prlogo.jpg" alt="Planet Rock Ann Arbor">
+            <h3>Planet Rock</h3>
+            <p>Rock Cancer is profoundly grateful to our key partner, Planet Rock, whose generosity and support make our mission possible. Through their unwavering commitment, they've enabled us to host impactful events, providing us with resources, expertise, and an inspiring space where hope and action meet. Simply put, Rock Cancer could not exist without the immense contributions of Planet Rock.  </p>
+       <a href="https://planet-rock.com/">Planet Rock</a>
         </div>
 
-        <!-- Michigan Climbing Club -->
         <div class="team-member">
-            <div class="org-description">  
-                <h3>Michigan Climbing Club</h3>
-                <p>Michigan Climbing Club's unwavering dedication has not only graced us with passionate volunteers but also played an instrumental role in advocating for our program within the broader climbing community. Their belief in our mission and commitment to fostering an inclusive environment has been pivotal. The synergy between Rock Cancer and the Michigan Climbing Club exemplifies the power of community collaboration.</p>
-                <a href="https://www.michiganclimbingclub.com/">Michigan Climbing Club</a>
-            </div>
             <img src="MCC.jpg" alt="Michigan Climbing Club">
+            <h3>Michigan Climbing Club</h3>
+            <p> Michigan Climbing Club's unwavering dedication has not only graced us with passionate volunteers but also played an instrumental role in advocating for our program within the broader climbing community. Their belief in our mission and commitment to fostering an inclusive environment has been pivotal. The synergy between Rock Cancer and the Michigan Climbing Club exemplifies the power of community collaboration.  </p>
+      <a href="https://www.michiganclimbingclub.com/">Michigan Climbing Club</a>
         </div>
 
-        <!-- Vara's Victors -->
         <div class="team-member">
-            <div class="org-description">  
-                <h3>Vara's Victors</h3>
-                <p>From the moment of her Wilms Tumor diagnosis in 2016, Vara Gordon, at just 11 years old, became a beacon of hope and advocacy for pediatric cancer research. Although her battle was with a cancer localized to her kidneys, her encounter with Dr. Carl Koschmann and his pioneering lab exposed her to the pressing challenges faced by children with aggressive brain tumors. Moved by their groundbreaking efforts, Vara chose to champion the Koschmann Lab, underscoring her broad vision of fighting pediatric cancer in all its forms.</p>
-                <a href="https://www.koschmannlab.org/varas-victors">Vara's Victors</a>
-            </div>
             <img src="vara.jpg" alt="Vara's Victors">
-        </div>
-
-        <!-- Koschmann Lab -->
-        <div class="team-member">
-            <div class="org-description">  
-                <h3>Koschmann Lab</h3>
-                <p>The Koschmann Lab stands at the forefront of pediatric brain tumor research, delving deep into the molecular intricacies of Diffuse Midline Glioma (DMG) and Diffuse Intrinsic Pontine Glioma (DIPG). Their commitment to precision medicine has led to groundbreaking insights into targeted therapies and diagnostics for these formidable diseases. By fostering an integrative approach, encompassing basic, translational, and clinical research, the Koschmann Lab seeks not just to understand but to redefine the therapeutic landscape.</p>
-                <a href="https://www.koschmannlab.org/about-us">Koschmann Lab</a>
-            </div>
-            <img src="lab.jpg" alt="Koschmann Lab">
+            <h3>Vara's Victors</h3>
+            <p> From the moment of her Wilms Tumor diagnosis in 2016, Vara Gordon, at just 11 years old, became a beacon of hope and advocacy for pediatric cancer research. Although her battle was with a cancer localized to her kidneys, her encounter with Dr. Carl Koschmann and his pioneering lab exposed her to the pressing challenges faced by children with aggressive brain tumors. Moved by their groundbreaking efforts, Vara chose to champion the Koschmann Lab, underscoring her broad vision of fighting pediatric cancer in all its forms.</p>
+      <a href="https://www.koschmannlab.org/varas-victors">Vara's Victors</a>
         </div>
         
+        <div class="team-member">
+            <img src="lab.jpg" alt="Koschmann Lab">
+            <h3>Koschmann Lab</h3>
+            <p> The Koschmann Lab stands at the forefront of pediatric brain tumor research, delving deep into the molecular intricacies of Diffuse Midline Glioma (DMG) and Diffuse Intrinsic Pontine Glioma (DIPG). Their commitment to precision medicine has led to groundbreaking insights into targeted therapies and diagnostics for these formidable diseases. By fostering an integrative approach, encompassing basic, translational, and clinical research, the Koschmann Lab seeks not just to understand but to redefine the therapeutic landscape  </p>
+      <a href="https://www.koschmannlab.org/about-us">Koschmann Lab</a>
+        </div>
+        
+        <!-- Add more volunteers in the same way -->
+
     </div>
 </section>
+    
+        <!-- ... Repeat the structure above for other team members ... -->
+    </section>
 
 
 
