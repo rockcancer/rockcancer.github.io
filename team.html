@@ -127,9 +127,8 @@
 }
 
 
-        .container {
-    display: flex;
-    justify-content: space-around;
+     .container {
+    /* Remove flex display */
     padding: 40px 5%; 
     background-color: #FFDACD; /* Peach */
 }
@@ -211,11 +210,12 @@
 }
 
 .team-member {
+    width: 100%; /* Occupy full width of parent container */
     padding: 20px;
     background-color: #FFFFFF; /* White background */
     border-radius: 10px; /* Rounded corners */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Box shadow for a lift effect */
-    margin: 10px; /* Spacing between the white boxes */
+    margin: 10px 0; /* Adjust margin to be vertical */
     text-align: center; /* Center the text inside the box */
 }
 
