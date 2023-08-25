@@ -7,9 +7,15 @@ ACCESS_TOKEN = os.environ.get('INSTAGRAM_ACCESS_TOKEN')  # Fetch the token from 
 def fetch_instagram_photos():
     url = f"https://graph.instagram.com/me/media?fields=id,caption,media_type,media_url,thumbnail_url,permalink&access_token={ACCESS_TOKEN}"
     response = requests.get(url)
+    
+    # Check if the response status code is not 200 (which means OK)
+    if response.status_code != 200:
+        raise Exception(f"Failed to fetch Instagram photos with status code: {response.status_code}, Response: {response.text}")
+
     data = response.json()
     media_urls = [item['media_url'] for item in data['data'] if item['media_type'] == 'IMAGE']
     return media_urls
+
 
 def update_website_gallery(media_urls):
     # Assuming you have a simple gallery page with placeholders for images
