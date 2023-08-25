@@ -194,36 +194,32 @@
     }
 }
 
- .team-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            padding: 40px 10%;
-            background-color: #FFDACD; 
-        }
+ .team-member {
+    margin: 20px;
+    padding: 20px;
+    background-color: #FFFFFF; /* White boxes */
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
 
-        .team-member {
-            width: calc(33.33% - 20px); /* Three members per row with a bit of spacing */
-            margin-bottom: 30px;
-            text-align: center;
-        }
+.team-member img {
+    max-width: 200px; /* Adjust as per your preference */
+    border-radius: 50%; /* Circular images */
+    margin-bottom: 20px; /* Space below image */
+}
 
-        .team-member img {
-            width: 70%;
-            border-radius: 50%; /* Making the image circular */
-            margin-bottom: 20px;
-        }
+.team-member h4 {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+    color: #5A189A; /* Vibrant Purple */
+}
 
-        .team-member h4 {
-            font-size: 1.5em;
-            margin-bottom: 10px;
-            color: #5A189A; 
-        }
+.team-member p {
+    font-size: 1em;
+    line-height: 1.5;
+}
 
-        .team-member p {
-            font-size: 1.1em;
-            line-height: 1.4;
-        }
 
         @media (max-width: 768px) {
             .team-member {
@@ -262,20 +258,38 @@
 </nav>
 
  
- <section class="team-container">
-        <!-- First Team Member -->
+
+
+<section class="description">
+    <h2>Leadership Team</h2>
+    <div class="container">
+        <!-- Sample Team Member -->
         <div class="team-member">
-            <img src="path_to_image_1.jpg" alt="Team Member 1 Name">
-            <h4>Team Member 1 Name</h4>
-            <p>Description about this team member. Their role, background, and any other pertinent information you'd like to share.</p>
+            <img src="path-to-image.jpg" alt="Team Member Name">
+            <h4>Team Member Name</h4>
+            <p>Description about the team member...</p>
         </div>
 
-        <!-- Second Team Member -->
+        <!-- Add more team members in the same way -->
+
+    </div>
+</section>
+
+<section class="description">
+    <h2>Volunteers</h2>
+    <div class="container">
+        <!-- Sample Volunteer -->
         <div class="team-member">
-            <img src="path_to_image_2.jpg" alt="Team Member 2 Name">
-            <h4>Team Member 2 Name</h4>
-            <p>Description about this team member. Their role, background, and any other pertinent information you'd like to share.</p>
+            <img src="path-to-volunteer-image.jpg" alt="Volunteer Name">
+            <h4>Volunteer Name</h4>
+            <p>Description about the volunteer...</p>
         </div>
+
+        <!-- Add more volunteers in the same way -->
+
+    </div>
+</section>
+
 
         <!-- ... Repeat the structure above for other team members ... -->
     </section>
