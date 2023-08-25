@@ -18,9 +18,9 @@ def update_website_gallery(media_urls):
     # Insert the images in the desired location
     new_content = ""
     for url in media_urls:
-        new_content += f'<img src="{url}" alt="Instagram Photo">\n'
+        new_content += f'<div class="instagram-image"><img src="{url}" alt="Instagram Photo"></div>\n'
     
-    # Replace placeholder with the images' HTML (this is a simplistic approach, adjust as needed)
+    # Replace placeholder with the images' HTML
     html_content = html_content.replace("<!-- INSTAGRAM_PHOTOS -->", new_content)
     
     # Write the updated content back to the gallery.html
