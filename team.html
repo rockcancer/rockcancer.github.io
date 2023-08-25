@@ -4,8 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rock Cancer - Free Rock Climbing!</title>
+
+    <!-- Title Tag -->
+    <title>Rock Cancer - Free Rock Climbing for Patients!</title>
+ <link rel="icon" type="image/png" sizes="32x32" href="flavicon.png">
+
+    <!-- Meta Description -->
+    <meta name="description" content="Rock Cancer offers a free rock climbing program for patients with cancer or other chronic medical conditions. Learn more about our mission and how you can support!">
+
+    
+    <!-- Canonical Tag -->
+    <link rel="canonical" href="https://www.rock-cancer.com/">
+
+    <!-- Keywords (less significant nowadays but can be included) -->
+    <meta name="keywords" content="Rock Climbing, Cancer, Recovery, Rock Cancer, Support, Donate, Community, Ann Arbor, SouthEast Michigan">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
 
     <style>
         body {
@@ -194,106 +209,110 @@
         font-size: 1em; /* Reduce font size for the subtitle */
     }
 }
+/* Add to your existing styles */
 
- .team-member {
+.team-section {
+    margin: 40px 0; /* Gives each team section some vertical spacing */
+}
+
+.team-members {
+    display: flex;
+    flex-wrap: wrap; /* Allows team members to wrap onto the next line */
+    justify-content: space-around; /* Spaces out each team member evenly */
+}
+
+.team-member {
+    flex-basis: calc(20% - 40px); /* Each team member will take up roughly 20% of the container width minus some spacing */
     margin: 20px;
-    padding: 20px;
-    background-color: #FFFFFF; /* White boxes */
-    border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px; /* Rounded corners */
+    background-color: #FFFFFF; /* White background for each team member card */
+    padding: 20px;
     text-align: center;
 }
 
-.team-member img {
-    max-width: 200px; /* Adjust as per your preference */
-    border-radius: 50%; /* Circular images */
-    margin-bottom: 20px; /* Space below image */
+.member-photo {
+    width: 100%;
+    border-radius: 10px; /* Rounded corners for photos */
+    margin-bottom: 20px; /* Space below the photo */
 }
 
-.team-member h4 {
-    font-size: 1.4em;
-    margin-bottom: 10px;
-    color: #5A189A; /* Vibrant Purple */
+/* Mobile Responsive Styles for Team */
+
+@media (max-width: 768px) {
+    .team-member {
+        flex-basis: calc(45% - 40px); /* On smaller screens, each team member will take up roughly 45% of the container width */
+    }
 }
 
-.team-member p {
-    font-size: 1em;
-    line-height: 1.5;
+@media (max-width: 500px) {
+    .team-member {
+        flex-basis: 100%; /* On very small screens, each team member will take up the full width */
+        margin: 10px 0;
+    }
 }
 
-
-        @media (max-width: 768px) {
-            .team-member {
-                width: 100%; /* Making each member take full width on smaller screens */
-                margin-bottom: 30px;
-            }
-        }
-      
     </style>
 </head>
 
 <body>
 
     <header>
-        <h1>🧗🏽‍♂️ <strong>Rock Cancer</strong> 🧗🏽‍♀️</h1>
-        <p>Rock Climbing, Community, Ice Cream!</p>
-    </header>
+    <h1><a href="index.html" style="color: inherit; text-decoration: none;">🧗🏽‍♂️ <strong>Rock Cancer</strong> 🧗🏽‍♀️</a></h1>
+    <p>Rock Climbing, Community, Ice Cream!</p>
+</header>
 
    <nav>
-    <a href="#">Home</a>
-    <a href="#">Activities</a>
+    <a href="index.html">Home</a>
+    <a href="activities.html">Activities</a>
     <div class="dropdown">
         <a href="#">About Us</a>
         <div class="dropdown-content">
-            <a href="#">Our Story</a>
-            <a href="#">Testimonials</a>
-            <a href="#">Gallery</a>
-            <a href="#">Donate</a>
-            <a href="#">Team</a>
+            <a href="story.html">Our Story</a>
+            <a href="testimonials.html">Testimonials</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="donate.html">Donate</a>
+            <a href="team.html">Team</a>
         </div>
     </div>
-    <a href="#">Shop</a>
-    <a href="#">FAQ</a> 
-    <a href="#">Calendar</a> 
-    <a href="#">Contact</a>
+    <a href="https://undergroundshirts.com/pages/custom-printing-online-stores">Shop</a>
+    <a href="faq.html">FAQ</a> 
+    <a href="calendar.html">Calendar</a> 
+    <a href="contact.html">Contact</a>
 </nav>
 
- 
 
 
-<section class="description">
-    <h2>Leadership Team</h2>
-    <div class="container">
-        <!-- Sample Team Member -->
-        <div class="team-member">
-            <img src="path-to-image.jpg" alt="Team Member Name">
-            <h4>Team Member Name</h4>
-            <p>Description about the team member...</p>
+  <div class="container">
+    <!-- Leadership Team Section -->
+    <div class="main-content team-section">
+        <h3>Leadership Team</h3>
+        <div class="team-members">
+            <!-- Sample member. Repeat as needed -->
+            <div class="team-member">
+                <img src="path_to_leader_1_photo.jpg" alt="Leader 1 Name" class="member-photo">
+                <h4>Leader 1 Name</h4>
+                <p>Short description about Leader 1. Their achievements, role, or any information you want to share.</p>
+            </div>
+            <!-- ... repeat for all leadership members ... -->
         </div>
-
-        <!-- Add more team members in the same way -->
-
     </div>
-</section>
 
-<section class="description">
-    <h2>Volunteers</h2>
-    <div class="container">
-        <!-- Sample Volunteer -->
-        <div class="team-member">
-            <img src="path-to-volunteer-image.jpg" alt="Volunteer Name">
-            <h4>Volunteer Name</h4>
-            <p>Description about the volunteer...</p>
+    <!-- Our Volunteers Section -->
+    <div class="main-content team-section">
+        <h3>Our Volunteers</h3>
+        <div class="team-members">
+            <!-- Sample member. Repeat as needed -->
+            <div class="team-member">
+                <img src="path_to_volunteer_1_photo.jpg" alt="Volunteer 1 Name" class="member-photo">
+                <h4>Volunteer 1 Name</h4>
+                <p>Short description about Volunteer 1. Their achievements, role, or any information you want to share.</p>
+            </div>
+            <!-- ... repeat for all volunteer members ... -->
         </div>
-
-        <!-- Add more volunteers in the same way -->
-
     </div>
-</section>
+</div>
 
-
-        <!-- ... Repeat the structure above for other team members ... -->
-    </section>
 
 
 
@@ -301,12 +320,11 @@
 
     
     <footer>
-        Connect with us:
-        <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
-        <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
-        <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
-        <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
-    </footer>
+    Connect with us:
+<a href="https://www.instagram.com/rockcancerofficial" title="Instagram" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+    <a href="contact.html" title="Message" target="_blank" rel="noopener noreferrer"><i class="far fa-envelope"></i></a>
+</footer>
+
 
 </body>
 
