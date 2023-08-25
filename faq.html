@@ -127,16 +127,18 @@
 }
 
 
-        .container {
+   .container {
     display: flex;
-    justify-content: space-around;
+    flex-direction: row; /* This ensures the boxes are horizontal */
+    flex-wrap: wrap; /* This allows boxes to wrap onto the next row if there isn't enough space */
+    justify-content: space-between; /* This spaces the boxes evenly */
     padding: 40px 5%; 
     background-color: #FFDACD; /* Peach */
 }
 
 .main-content {
-    flex: 1;
-    margin: 0 20px;
+    flex: 0 1 calc(33.33% - 40px); /* This makes each box roughly one-third of the container's width minus some margin */
+    margin: 0 20px 20px 20px; /* Space between boxes */
     padding: 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     background-color: #FFFFFF; /* White to contrast with the Peach background */
@@ -177,11 +179,12 @@
 /* Adjust container layout for smaller screens */
 @media (max-width: 768px) {
     .container {
-        flex-direction: column;
+        flex-direction: column; /* Makes the boxes stack vertically on smaller screens */
         align-items: center;
     }
 
     .main-content {
+        flex: 1; /* Makes each box take the full width of the container on smaller screens */
         margin-bottom: 20px;
         width: 90%; /* Take up most of the screen width */
     }
