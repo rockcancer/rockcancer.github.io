@@ -209,48 +209,6 @@
         font-size: 1em; /* Reduce font size for the subtitle */
     }
 }
-/* Add to your existing styles */
-
-.team-section {
-    margin: 40px 0; /* Gives each team section some vertical spacing */
-}
-
-.team-members {
-    display: flex;
-    flex-wrap: wrap; /* Allows team members to wrap onto the next line */
-    justify-content: space-around; /* Spaces out each team member evenly */
-}
-
-.team-member {
-    flex-basis: calc(20% - 40px); /* Each team member will take up roughly 20% of the container width minus some spacing */
-    margin: 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    border-radius: 10px; /* Rounded corners */
-    background-color: #FFFFFF; /* White background for each team member card */
-    padding: 20px;
-    text-align: center;
-}
-
-.member-photo {
-    width: 100%;
-    border-radius: 10px; /* Rounded corners for photos */
-    margin-bottom: 20px; /* Space below the photo */
-}
-
-/* Mobile Responsive Styles for Team */
-
-@media (max-width: 768px) {
-    .team-member {
-        flex-basis: calc(45% - 40px); /* On smaller screens, each team member will take up roughly 45% of the container width */
-    }
-}
-
-@media (max-width: 500px) {
-    .team-member {
-        flex-basis: 100%; /* On very small screens, each team member will take up the full width */
-        margin: 10px 0;
-    }
-}
 
     </style>
 </head>
@@ -281,45 +239,49 @@
     <a href="contact.html">Contact</a>
 </nav>
 
+ 
 
 
-  <div class="container">
-    <!-- Leadership Team Section -->
-    <div class="main-content team-section">
-        <h3>Leadership Team</h3>
-        <div class="team-members">
-            <!-- Sample member. Repeat as needed -->
-            <div class="team-member">
-                <img src="path_to_leader_1_photo.jpg" alt="Leader 1 Name" class="member-photo">
-                <h4>Leader 1 Name</h4>
-                <p>Short description about Leader 1. Their achievements, role, or any information you want to share.</p>
-            </div>
-            <!-- ... repeat for all leadership members ... -->
+<section class="description">
+    <h2>Leadership Team</h2>
+    <div class="container">
+        <!-- Sample Team Member -->
+        <div class="team-member">
+            <img src="path-to-image.jpg" alt="Team Member Name">
+            <h4>Team Member Name</h4>
+            <p>Description about the team member...</p>
         </div>
-    </div>
 
-    <!-- Our Volunteers Section -->
-    <div class="main-content team-section">
-        <h3>Our Volunteers</h3>
-        <div class="team-members">
-            <!-- Sample member. Repeat as needed -->
-            <div class="team-member">
-                <img src="path_to_volunteer_1_photo.jpg" alt="Volunteer 1 Name" class="member-photo">
-                <h4>Volunteer 1 Name</h4>
-                <p>Short description about Volunteer 1. Their achievements, role, or any information you want to share.</p>
-            </div>
-            <!-- ... repeat for all volunteer members ... -->
+        <!-- Add more team members in the same way -->
+
+    </div>
+</section>
+
+<section class="description">
+    <h2>Volunteers</h2>
+    <div class="container">
+        <!-- Sample Volunteer -->
+        <div class="team-member">
+            <img src="path-to-volunteer-image.jpg" alt="Volunteer Name">
+            <h4>Volunteer Name</h4>
+            <p>Description about the volunteer...</p>
         </div>
-    </div>
-</div>
 
+        <!-- Add more volunteers in the same way -->
+
+    </div>
+</section>
+
+
+        <!-- ... Repeat the structure above for other team members ... -->
+    </section>
 
 
 
 
 
     
-    <footer>
+ <footer>
     Connect with us:
 <a href="https://www.instagram.com/rockcancerofficial" title="Instagram" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
     <a href="contact.html" title="Message" target="_blank" rel="noopener noreferrer"><i class="far fa-envelope"></i></a>
