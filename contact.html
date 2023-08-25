@@ -4,8 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rock Cancer - Free Rock Climbing!</title>
+
+    <!-- Title Tag -->
+    <title>Rock Cancer - Free Rock Climbing for Patients!</title>
+ <link rel="icon" type="image/png" sizes="32x32" href="flavicon.png">
+
+    <!-- Meta Description -->
+    <meta name="description" content="Rock Cancer offers a free rock climbing program for patients with cancer or other chronic medical conditions. Learn more about our mission and how you can support!">
+
+    
+    <!-- Canonical Tag -->
+    <link rel="canonical" href="https://www.rock-cancer.com/">
+
+    <!-- Keywords (less significant nowadays but can be included) -->
+    <meta name="keywords" content="Rock Climbing, Cancer, Recovery, Rock Cancer, Support, Donate, Community, Ann Arbor, SouthEast Michigan">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
 
     <style>
         body {
@@ -195,50 +210,6 @@
     }
 }
 
-.contact-form {
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-.form-group {
-    margin-bottom: 20px;
-}
-
-.contact-form label {
-    display: block;
-    margin-bottom: 10px;
-    font-weight: bold;
-}
-
-.contact-form input, .contact-form textarea {
-    width: 100%;
-    padding: 10px;
-    box-sizing: border-box;
-    border: 2px solid #5A189A; /* Vibrant Purple */
-    border-radius: 5px;
-    font-size: 1em;
-    outline: none;
-}
-
-.contact-form textarea {
-    resize: vertical;
-}
-
-.contact-button {
-    background-color: #5A189A; /* Vibrant Purple */
-    color: #FFDACD; /* Peach */
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.contact-button:hover {
-    background-color: #FF5252; /* Red */
-}
-
-      
     </style>
 </head>
 
@@ -268,46 +239,51 @@
     <a href="contact.html">Contact</a>
 </nav>
 
-  <section class="description">
-    <h2>Contact Rock Cancer</h2>
-    <p>Got questions, feedback, or just want to reach out? Use the form below and we'll get back to you as soon as possible!</p>
-    
-    <form action="https://formspree.io/YOUR_FORMSPREE_ENDPOINT" method="POST" class="contact-form">
-        <div class="form-group">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-        </div>
-        
-        <div class="form-group">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="_replyto" required>
-        </div>
-        
-        <div class="form-group">
-            <label for="subject">Subject:</label>
-            <input type="text" id="subject" name="subject" required>
-        </div>
-        
-        <div class="form-group">
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-        </div>
-        
-        <div class="form-group">
-            <button type="submit" class="contact-button">Submit</button>
-        </div>
-    </form>
-</section>
+
+
+   <div class="container">
+    <div class="main-content">
+        <h3>Contact Us</h3>
+        <p>We'd love to hear from you. Fill out the form below and we'll get back to you as soon as possible.</p>
+
+        <form action="https://formspree.io/YOUREMAIL" method="POST">
+            <div style="margin-bottom: 10px;">
+                <label for="name" style="display: block; margin-bottom: 5px;">Name:</label>
+                <input type="text" id="name" name="name" required style="width: 100%; padding: 10px; border: 1px solid #5A189A; border-radius: 5px;">
+            </div>
+
+            <div style="margin-bottom: 10px;">
+                <label for="email" style="display: block; margin-bottom: 5px;">Email:</label>
+                <input type="email" id="email" name="email" required style="width: 100%; padding: 10px; border: 1px solid #5A189A; border-radius: 5px;">
+            </div>
+
+            <div style="margin-bottom: 10px;">
+                <label for="subject" style="display: block; margin-bottom: 5px;">Subject:</label>
+                <input type="text" id="subject" name="subject" required style="width: 100%; padding: 10px; border: 1px solid #5A189A; border-radius: 5px;">
+            </div>
+
+            <div style="margin-bottom: 10px;">
+                <label for="message" style="display: block; margin-bottom: 5px;">Message:</label>
+                <textarea id="message" name="message" required rows="4" style="width: 100%; padding: 10px; border: 1px solid #5A189A; border-radius: 5px;"></textarea>
+            </div>
+
+            <button type="submit" style="background-color: #5A189A; color: #FFDACD; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; transition: background-color 0.3s;">Send Message</button>
+        </form>
+    </div>
+</div>
+
+
 
 
 
 
     
     <footer>
-        Connect with us:
-        <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
-         <a href="contact.html" title="Message"> <i class="fa-regular fa-envelope"></i></a>
-    </footer>
+    Connect with us:
+<a href="https://www.instagram.com/rockcancerofficial" title="Instagram" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+    <a href="contact.html" title="Message" target="_blank" rel="noopener noreferrer"><i class="far fa-envelope"></i></a>
+</footer>
+
 
 </body>
 
