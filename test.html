@@ -21,7 +21,15 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 
+<!-- Bootstrap CSS -->
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 
+<!-- jQuery and Bootstrap JS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+    
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -210,6 +218,23 @@
     }
 }
 
+
+#backgroundCarousel {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+        
     </style>
 </head>
 
@@ -240,7 +265,23 @@
 </nav>
 
     <!-- ... Rest of the content ... -->
+<div id="backgroundCarousel" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="MCClogo.jpg" alt="Image 1">
+        </div>
+        <div class="carousel-item">
+            <img src="vara.jpg" alt="Image 2">
+        </div>
+        <div class="carousel-item">
+            <img src="prlogo.jpg" alt="Image 3">
+        </div>
+    </div>
+</div>
 
+
+
+    
 <section class="description">
     <h2>About Rock Cancer</h2>
     <p>Rock Cancer is a free rock climbing program for patients (age 4-25) with cancer or a history of cancer or another chronic medical condition. This program takes place on the third Friday of every month from 4:15-6 pm at Planet Rock Ann Arbor. Participants can bring an additional friend or sibling to rock climb as well. The experience is invaluable, especially immediately post-therapy when self-confidence can be low and de-conditioning can be high. Rock climbing is an adaptive skill that can significantly improve strength and range of motion, making it perfect for recovery and overall well-being.</p>
