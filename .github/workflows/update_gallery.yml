@@ -25,7 +25,7 @@ jobs:
         pip install requests
 
     - name: Run script to fetch Instagram photos
-      run: python .github/scripts/fetch_instagram.py
+      run: .github/scripts/fetch_instagram.py
 
     - name: Configure git and commit changes
       run: |
