@@ -268,8 +268,8 @@
 <script>
   // Function to fetch and display the Instagram feed
   function displayInstagramFeed() {
-    const accessToken = 'YOUR_ACCESS_TOKEN'; // Replace with your actual access token
-    const userId = 'YOUR_USER_ID'; // Replace with your Instagram user ID
+    const accessToken = process.env.INSTAGRAM_ACCESS_TOKEN;
+    const userId = 'rockcancerofficial'; // Replace with your Instagram user ID
 
     // Define the number of images you want to display
     const numImages = 6;
