@@ -13,6 +13,9 @@
     <meta name="description" content="Rock Cancer offers a free rock climbing program for patients with cancer or other chronic medical conditions. Learn more about our mission and how you can support!">
 
     
+    <script async defer src="https://www.instagram.com/embed.js"></script>
+
+    
     <!-- Canonical Tag -->
     <link rel="canonical" href="https://www.rock-cancer.com/">
 
@@ -257,11 +260,48 @@
 
 <section class="instagram-gallery">
     <h2>Instagram Gallery</h2>
-
-
+    <div id="instagram-feed"></div>
     
 </section>
 
+
+<script>
+  // Function to fetch and display the Instagram feed
+  function displayInstagramFeed() {
+    const accessToken = 'YOUR_ACCESS_TOKEN'; // Replace with your actual access token
+    const userId = 'YOUR_USER_ID'; // Replace with your Instagram user ID
+
+    // Define the number of images you want to display
+    const numImages = 6;
+
+    // Fetch the Instagram feed data
+    fetch(`https://graph.instagram.com/v12.0/${userId}/media?fields=id,caption,media_type,media_url,thumbnail_url,permalink,timestamp&access_token=${accessToken}&limit=${numImages}`)
+      .then((response) => response.json())
+      .then((data) => {
+        const feedContainer = document.getElementById('instagram-feed');
+
+        // Loop through the Instagram posts and create HTML elements for each image
+        data.data.forEach((post) => {
+          const imageElement = document.createElement('a');
+          imageElement.href = post.permalink;
+          imageElement.target = '_blank';
+
+          const image = document.createElement('img');
+          image.src = post.media_url;
+          image.alt = post.caption || '';
+
+          imageElement.appendChild(image);
+          feedContainer.appendChild(imageElement);
+        });
+      })
+      .catch((error) => {
+        console.error('Error fetching Instagram feed:', error);
+      });
+  }
+
+  // Call the function to display the Instagram feed when the page loads
+  displayInstagramFeed();
+</script>
 
 
     
