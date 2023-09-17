@@ -25,7 +25,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 
 
-    <style>
+     <style>
         body {
             font-family: 'Arial', sans-serif;
             background-color: #FFDACD;
@@ -60,170 +60,153 @@
             color: #FFDACD; /* Peach */
         }
 
-        footer {
-            background-color: #5A189A; /* Vibrant Purple */
-            color: #FFDACD;
+        .dropdown {
+            position: relative;
+            display: inline-flex;
+            align-items: center;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #5A189A; /* Using your Vibrant Purple color for the dropdown */
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: #FFDACD; /* Peach for text */
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #FF5252; /* Red background for hover */
+            color: #FFC107; /* Gold text color for hover */
+        }
+
+        .description {
+            padding: 40px 10%;  /* Adds padding around the section, 10% from the left and right */
             text-align: center;
-            padding: 20px 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+            background-color: #FFDACD; /* Peach background color for consistency */
         }
 
-        footer a {
-            color: #FFDACD; /* Peach */
-            margin: 0 10px;
+        .description h2 {
+            font-size: 2em;   /* Make the heading a bit larger */
+            margin-bottom: 20px; /* Add some space between the heading and paragraph */
         }
 
-        footer a:hover {
-            color: #FFC107; /* Gold */
+        .description p {
+            font-size: 1.2em; /* Make the paragraph text slightly larger for better readability */
+            line-height: 1.6; /* Increase line height for better readability */
         }
-
-       
-
-.dropdown {
-    position: relative;
-    display: inline-flex;
-    align-items: center;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #5A189A; /* Using your Vibrant Purple color for the dropdown */
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-.dropdown-content a {
-    color: #FFDACD; /* Peach for text */
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-.dropdown-content a:hover {
-    background-color: #FF5252; /* Red background for hover */
-    color: #FFC107; /* Gold text color for hover */
-}
-
-.description {
-    padding: 40px 10%;  /* Adds padding around the section, 10% from the left and right */
-    text-align: center;
-    background-color: #FFDACD; /* Peach background color for consistency */
-}
-
-.description h2 {
-    font-size: 2em;   /* Make the heading a bit larger */
-    margin-bottom: 20px; /* Add some space between the heading and paragraph */
-}
-
-.description p {
-    font-size: 1.2em; /* Make the paragraph text slightly larger for better readability */
-    line-height: 1.6; /* Increase line height for better readability */
-}
-
 
         .container {
-    display: flex;
-    justify-content: space-around;
-    padding: 40px 5%; 
-    background-color: #FFDACD; /* Peach */
-}
+            display: flex;
+            flex-wrap: wrap; /* Allow items to wrap onto the next line */
+            justify-content: center;
+            padding: 40px 5%; 
+            background-color: #FFDACD; /* Peach */
+        }
 
-.main-content {
-    flex: 1;
-    margin: 0 20px;
-    padding: 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    background-color: #FFFFFF; /* White to contrast with the Peach background */
-    border-radius: 10px; /* Rounded corners */
-    text-align: center;
-}
+        .main-content {
+            flex: 1;
+            margin: 0 20px;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            background-color: #FFFFFF; /* White to contrast with the Peach background */
+            border-radius: 10px; /* Rounded corners */
+            text-align: center;
+        }
 
-.main-content h3 {
-    font-size: 1.5em;
-    margin-bottom: 20px;
-    color: #5A189A; /* Vibrant Purple */
-}
+        .main-content h3 {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+            color: #5A189A; /* Vibrant Purple */
+        }
 
-.main-content p {
-    font-size: 1.2em;
-    line-height: 1.6;
-    margin-bottom: 20px;
-}
+        .main-content p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
 
-.main-content a {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #FF5252; /* Red */
-    color: #FFDACD; /* Peach */
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
+        .main-content a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #FF5252; /* Red */
+            color: #FFDACD; /* Peach */
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
 
-.main-content a:hover {
-    background-color: #5A189A; /* Vibrant Purple */
-}
-
-/* Existing styles ... */
-
-/* Mobile Responsive Styles */
-
-/* Adjust container layout for smaller screens */
-@media (max-width: 768px) {
-    .container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .main-content {
-        margin-bottom: 20px;
-        width: 90%; /* Take up most of the screen width */
-    }
-
-    nav {
-        flex-wrap: wrap; /* Allow items to wrap onto the next line */
-    }
-
-    nav a, .dropdown {
-        flex: 1 0 50%; /* They'll take up roughly half the width of the screen */
-        text-align: center; /* Center the text */
-        padding: 10px 0; /* Add some vertical padding */
-    }
-
-    .description, .container {
-        padding-left: 5%; 
-        padding-right: 5%;
-    }
-
-    header h1 {
-        font-size: 1.5em; /* Reduce font size for the title */
-    }
-
-    header p {
-        font-size: 1em; /* Reduce font size for the subtitle */
-    }
-}
-
+        .main-content a:hover {
+            background-color: #5A189A; /* Vibrant Purple */
+        }
 
         .instagram-gallery {
-    padding: 40px;
-    text-align: center;
-}
+            padding: 40px;
+            text-align: center;
+        }
 
-.instagram-image {
-    margin: 20px;
-    display: inline-block;
-}
+        .instagram-image {
+            margin: 20px;
+            display: inline-block;
+        }
 
+        /* Mobile Responsive Styles */
+
+        /* Adjust container layout for smaller screens */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .main-content {
+                margin-bottom: 20px;
+                width: 90%; /* Take up most of the screen width */
+            }
+
+            nav {
+                flex-wrap: wrap; /* Allow items to wrap onto the next line */
+            }
+
+            nav a, .dropdown {
+                flex: 1 0 50%; /* They'll take up roughly half the width of the screen */
+                text-align: center; /* Center the text */
+                padding: 10px 0; /* Add some vertical padding */
+            }
+
+            .description, .container {
+                padding-left: 5%; 
+                padding-right: 5%;
+            }
+
+            header h1 {
+                font-size: 1.5em; /* Reduce font size for the title */
+            }
+
+            header p {
+                font-size: 1em; /* Reduce font size for the subtitle */
+            }
+        }
+
+        .instagram-gallery {
+            padding: 20px;
+        }
+
+        .instagram-gallery h2 {
+            font-size: 1.5em;
+        }
     </style>
 </head>
 
