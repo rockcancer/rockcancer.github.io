@@ -265,45 +265,6 @@
 </section>
 
 
-<script>
-  // Function to fetch and display the Instagram feed
-  function displayInstagramFeed() {
-    const accessToken = process.env.INSTAGRAM_ACCESS_TOKEN;
-    const userId = 'rockcancerofficial'; // Replace with your Instagram user ID
-
-    // Define the number of images you want to display
-    const numImages = 6;
-
-    // Fetch the Instagram feed data
-    fetch(`https://graph.instagram.com/v12.0/${userId}/media?fields=id,caption,media_type,media_url,thumbnail_url,permalink,timestamp&access_token=${accessToken}&limit=${numImages}`)
-      .then((response) => response.json())
-      .then((data) => {
-        const feedContainer = document.getElementById('instagram-feed');
-
-        // Loop through the Instagram posts and create HTML elements for each image
-        data.data.forEach((post) => {
-          const imageElement = document.createElement('a');
-          imageElement.href = post.permalink;
-          imageElement.target = '_blank';
-
-          const image = document.createElement('img');
-          image.src = post.media_url;
-          image.alt = post.caption || '';
-
-          imageElement.appendChild(image);
-          feedContainer.appendChild(imageElement);
-        });
-      })
-      .catch((error) => {
-        console.error('Error fetching Instagram feed:', error);
-      });
-  }
-
-  // Call the function to display the Instagram feed when the page loads
-  displayInstagramFeed();
-</script>
-
-
 <script
   type="module"
   src="https://unpkg.com/@nocodeapi/embed-instagram-feed@latest/embed-instagram-feed.js?module"
