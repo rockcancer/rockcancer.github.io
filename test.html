@@ -170,6 +170,14 @@
     background-color: #5A189A; /* Vibrant Purple */
 }
 
+   .header-logo {
+    max-width: 100%;  /* ensures the logo scales down if it's too wide */
+    height: auto;     /* maintains aspect ratio */
+    display: block;   /* makes the image a block element */
+    margin: 0 auto;   /* centers the image if it's narrower than its container */
+}
+
+
 /* Existing styles ... */
 
 /* Mobile Responsive Styles */
@@ -216,8 +224,9 @@
 <body>
 
     <header>
-    <a href="index.html"><img src="logo.jpg" alt="Rock Cancer Logo"></a>
+    <a href="index.html"><img src="logo.jpg" alt="Rock Cancer Logo" class="header-logo"></a>
 </header>
+
 
 
    <nav>
