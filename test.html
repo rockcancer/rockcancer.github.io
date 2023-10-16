@@ -1,46 +1,84 @@
-<style>
-    /* ... existing styles ... */
-
-    body {
-        font-family: 'Arial', sans-serif;
-        background-color: #E0F7FA; /* Light Sky Blue for a vibrant feel */
-    }
-
-    header {
-        background-color: #FFEB3B; /* Bright Yellow like the "Rock Cancer" title in the design */
-        padding: 15px 0;
-        text-align: center;
-        border-bottom: 5px solid #FF5722; /* A variant of Red like the ropes in the design */
-    }
-
-    nav {
-        background-color: #FF5722; /* Red like the ropes */
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    }
-
-    nav a {
-        color: #FFFFFF; /* White for better contrast against the Red background */
-    }
-
-    nav a:hover {
-        color: #FFEB3B; /* Bright Yellow for hover effect */
-    }
-
-    footer {
-        background-color: #FF9800; /* Orange like the climbing holds in the design */
-        color: #FFFFFF;
-    }
-
-    .description {
-        background-color: #E0F7FA; /* Light Sky Blue */
-    }
-
-    .container {
-        background-color: #E0F7FA; /* Light Sky Blue */
-    }
-
-    /* ... existing styles ... */
-
-</style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Cancer - Free Rock Climbing for Patients!</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="flavicon.png">
+    <meta name="description" content="Rock Cancer offers a free rock climbing program for patients with cancer or other chronic medical conditions. Learn more about our mission and how you can support!">
+    <link rel="canonical" href="https://www.rock-cancer.com/">
+    <meta name="keywords" content="Rock Climbing, Cancer, Recovery, Rock Cancer, Support, Donate, Community, Ann Arbor, SouthEast Michigan">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #F2E9E4; /* Softer peach background */
+            margin: 0;
+            padding: 0;
+            color: #5A189A;
+        }
+        header {
+            background-color: #FFC107;
+            padding: 20px 0;
+            text-align: center;
+            border-bottom: 5px solid #FF5252;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #FF5252;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            padding: 10px;
+        }
+        nav a, .dropdown {
+            text-decoration: none;
+            margin: 0 20px;
+            color: #FFDACD; /* Changed to peach */
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover, .dropdown:hover {
+            color: #FFC107; 
+        }
+        footer {
+            background-color: #5A189A;
+            color: #FFDACD;
+            text-align: center;
+            padding: 20px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        footer a {
+            color: #FFDACD;
+            margin: 0 10px;
+        }
+        footer a:hover {
+            color: #FFC107;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-flex;
+            align-items: center;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #5A189A;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown-content a {
+            color: #FFDACD;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .dropdown-content a
 
 
