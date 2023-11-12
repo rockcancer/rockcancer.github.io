@@ -1,84 +1,302 @@
 <!DOCTYPE html>
 <html lang="en">
+ 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rock Cancer</title>
+
+    <!-- Title Tag -->
+    <title>Rock Cancer - Free Rock Climbing for Patients!</title>
+ <link rel="icon" type="image/png" sizes="32x32" href="flavicon.png">
+
+    <!-- Meta Description -->
+    <meta name="description" content="Rock Cancer offers a free rock climbing program for patients with cancer or other chronic medical conditions. Learn more about our mission and how you can support!">
+
+    
+    <!-- Canonical Tag -->
+    <link rel="canonical" href="https://www.rock-cancer.com/">
+
+    <!-- Keywords (less significant nowadays but can be included) -->
+    <meta name="keywords" content="Rock Climbing, Cancer, Recovery, Rock Cancer, Support, Donate, Community, Ann Arbor, SouthEast Michigan">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+
     <style>
         body {
-            background-color: white;
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
+            background-color: #FFDACD;
+            margin: 0;
+            padding: 0;
+            color: #5A189A; /* Vibrant Purple */
         }
 
-        .navbar {
-            background-color: #FFA500; /* bright orange */
-            padding: 10px 0;
+        header {
+            background-color: #FFC107; /* Gold */
+            padding: 15px 0;
             text-align: center;
+            border-bottom: 5px solid #FF5252; /* Red */
         }
 
-        .navbar a {
-            color: white;
-            padding: 14px 20px;
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #FF5252; /* Red */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        nav a {
             text-decoration: none;
+            margin: 10px 20px;
+            color: #FFC107; /* Gold */
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #FFDACD; /* Peach */
+        }
+
+        footer {
+            background-color: #5A189A; /* Vibrant Purple */
+            color: #FFDACD;
             text-align: center;
-        }
-
-        .navbar a:hover {
-            background-color: #FF8C00; /* slightly darker orange */
-            color: white;
-        }
-
-        .content {
-            padding: 20px;
-        }
-
-        .header-image {
+            padding: 20px 0;
+            position: fixed;
+            bottom: 0;
             width: 100%;
         }
 
-        .about-section {
-            padding: 20px 0;
+        footer a {
+            color: #FFDACD; /* Peach */
+            margin: 0 10px;
         }
 
-        .about-header {
-            font-size: 24px;
-            font-weight: bold;
-            margin-bottom: 10px;
+        footer a:hover {
+            color: #FFC107; /* Gold */
         }
 
-        .about-description {
-            font-size: 16px;
-        }
+       
 
-        /* More styles can be added based on your requirements */
+.dropdown {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #5A189A; /* Using your Vibrant Purple color for the dropdown */
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #FFDACD; /* Peach for text */
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #FF5252; /* Red background for hover */
+    color: #FFC107; /* Gold text color for hover */
+}
+
+.description {
+    padding: 40px 10%;  /* Adds padding around the section, 10% from the left and right */
+    text-align: center;
+    background-color: #FFDACD; /* Peach background color for consistency */
+}
+
+.description h2 {
+    font-size: 2em;   /* Make the heading a bit larger */
+    margin-bottom: 20px; /* Add some space between the heading and paragraph */
+}
+
+.description p {
+    font-size: 1.2em; /* Make the paragraph text slightly larger for better readability */
+    line-height: 1.6; /* Increase line height for better readability */
+}
+
+
+        .container {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 5%; 
+    background-color: #FFDACD; /* Peach */
+}
+
+.main-content {
+    flex: 1;
+    margin: 0 20px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    background-color: #FFFFFF; /* White to contrast with the Peach background */
+    border-radius: 10px; /* Rounded corners */
+    text-align: center;
+}
+
+.main-content h3 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #5A189A; /* Vibrant Purple */
+}
+
+.main-content p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.main-content a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #FF5252; /* Red */
+    color: #FFDACD; /* Peach */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.main-content a:hover {
+    background-color: #5A189A; /* Vibrant Purple */
+}
+
+   .header-logo {
+    max-width: 100%;  /* ensures the logo scales down if it's too wide */
+    height: auto;     /* maintains aspect ratio */
+    display: block;   /* makes the image a block element */
+    margin: 0 auto;   /* centers the image if it's narrower than its container */
+}
+
+
+/* Existing styles ... */
+
+/* Mobile Responsive Styles */
+
+/* Adjust container layout for smaller screens */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-content {
+        margin-bottom: 20px;
+        width: 90%; /* Take up most of the screen width */
+    }
+
+    nav {
+        flex-wrap: wrap; /* Allow items to wrap onto the next line */
+    }
+
+    nav a, .dropdown {
+        flex: 1 0 50%; /* They'll take up roughly half the width of the screen */
+        text-align: center; /* Center the text */
+        padding: 10px 0; /* Add some vertical padding */
+    }
+
+    .description, .container {
+        padding-left: 5%; 
+        padding-right: 5%;
+    }
+
+    header h1 {
+        font-size: 1.5em; /* Reduce font size for the title */
+    }
+
+    header p {
+        font-size: 1em; /* Reduce font size for the subtitle */
+    }
+}
+
     </style>
 </head>
+
 <body>
-    <div class="navbar">
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Programs</a>
-        <a href="#">Testimonials</a>
-        <a href="#">Contact</a>
-    </div>
 
-    <div class="content">
-        <!-- Hero Image -->
-        <img src="path_to_your_image.jpg" alt="Rock Cancer Banner" class="header-image">
-        
-        <!-- About Section -->
-        <div class="about-section">
-            <div class="about-header">About Us</div>
-            <p class="about-description">
-                Teaching your pediatric patients how to rock climb. This is a placeholder text for the about section, which can be replaced with the desired content.
-            </p>
+     <header>
+    <a href="index.html">
+        <img src="/images/logo3.png" alt="Rock Cancer Logo" style="max-width: 20%; height: auto;">
+    </a>
+</header>
+
+
+
+   <nav>
+    <a href="index.html">Home</a>
+    <a href="activities.html">Activities</a>
+    <div class="dropdown">
+        <a href="#">About Us</a>
+        <div class="dropdown-content">
+            <a href="story.html">Our Story</a>
+            <a href="testimonials.html">Testimonials</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="donate.html">Donate</a>
+            <a href="team.html">Team</a>
         </div>
-
-        <!-- Additional content sections can be added here -->
     </div>
+    <!--      <a href="https://undergroundshirts.com/pages/custom-printing-online-stores">Shop</a>   -->
+    <a href="faq.html">FAQ</a> 
+    <a href="calendar.html">Calendar</a> 
+    <a href="contact.html">Contact</a>
+</nav>
+
+    <!-- ... Rest of the content ... -->
+
+<section class="description">
+    <h2>About Rock Cancer</h2>
+    <p>Rock Cancer is a free rock climbing program for patients (age 4-25) with cancer or a history of cancer or another chronic medical condition. This program takes place on the third Friday of every month from 4:15-6 pm at Planet Rock Ann Arbor. Participants can bring an additional friend or sibling to rock climb as well. The experience is invaluable, especially immediately post-therapy when self-confidence can be low and de-conditioning can be high. Rock climbing is an adaptive skill that can significantly improve strength and range of motion, making it perfect for recovery and overall well-being.</p>
+        <p>If you are interested in joining our program, <a href="https://docs.google.com/forms/d/e/1FAIpQLSdScakAvygyekjonQ9OOpvxDm4I6oJiUg01kob0MfFt6ifEbQ/viewform">fill out this form</a>!</p>
+
+  
+        <p>Please fill out this <a href="https://docs.google.com/forms/d/e/1FAIpQLScs8INLKIKQV6zOEjjmm7RIYJx5MiDVomztUSnTTC5Kv-584A/viewform">Photo/Video Release form</a> which helps us to produce fundraising materials to continue making this program free for all!</p>
+
+</section>
+
+<div class="container">
+    <div class="main-content">
+        <h3>In the News</h3>
+        <p>Check out this mLive Article made about Rock Cancer!</p>
+        <a href="https://www.mlive.com/news/ann-arbor/2023/02/kids-with-cancer-are-reaching-great-heights-in-ann-arbor-rock-climbing-program.html" target="_blank" rel="noopener noreferrer">Read More</a>
+    </div>
+
+
+  <!-- 
+    <div class="main-content">
+        <h3>Shop</h3>
+        <p>Support us! Purchase Rock Cancer merchandise and show off your support.</p>
+        <a href="#" target="_blank" rel="noopener noreferrer">Shop Now</a>
+    </div>
+-->
+ 
+    <div class="main-content">
+        <h3>Contact Us</h3>
+        <p>Got questions or feedback? We're here to help and listen!</p>
+        <a href="contact.html">Contact</a>
+    </div>
+</div>
+
+
+
+    
+    <footer>
+    Connect with us:
+<a href="https://www.instagram.com/rockcancerofficial" title="Instagram" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+    <a href="contact.html" title="Message" target="_blank" rel="noopener noreferrer"><i class="far fa-envelope"></i></a>
+</footer>
+
+
 </body>
+
 </html>
-
-
 
 
