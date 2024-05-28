@@ -1,62 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
- 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Title Tag -->
     <title>Rock Cancer - Free Rock Climbing for Patients!</title>
     <link rel="icon" type="image/png" sizes="32x32" href="flavicon.png">
-
-    <!-- Meta Description -->
     <meta name="description" content="Rock Cancer offers a free rock climbing program for patients with cancer or other chronic medical conditions. Learn more about our mission and how you can support!">
-
-    <!-- Canonical Tag -->
     <link rel="canonical" href="https://www.rock-cancer.com/">
-
-    <!-- Keywords (less significant nowadays but can be included) -->
     <meta name="keywords" content="Rock Climbing, Cancer, Recovery, Rock Cancer, Support, Donate, Community, Ann Arbor, SouthEast Michigan">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-
     <style>
         body {
             font-family: 'Arial', sans-serif;
             background-color: #FFDACD;
             margin: 0;
             padding: 0;
-            color: #5A189A; /* Vibrant Purple */
+            color: #5A189A;
         }
 
         header {
-            background-color: #FFC107; /* Gold */
+            background-color: #FFC107;
             padding: 15px 0;
             text-align: center;
-            border-bottom: 5px solid #FF5252; /* Red */
+            border-bottom: 5px solid #FF5252;
         }
 
         nav {
             display: flex;
             justify-content: center;
-            background-color: #FF5252; /* Red */
+            background-color: #FF5252;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
         }
 
         nav a {
             text-decoration: none;
             margin: 10px 20px;
-            color: #FFC107; /* Gold */
+            color: #FFC107;
             font-weight: bold;
             transition: color 0.3s;
         }
 
         nav a:hover {
-            color: #FFDACD; /* Peach */
+            color: #FFDACD;
         }
 
         footer {
-            background-color: #5A189A; /* Vibrant Purple */
+            background-color: #5A189A;
             color: #FFDACD;
             text-align: center;
             padding: 20px 0;
@@ -66,12 +55,12 @@
         }
 
         footer a {
-            color: #FFDACD; /* Peach */
+            color: #FFDACD;
             margin: 0 10px;
         }
 
         footer a:hover {
-            color: #FFC107; /* Gold */
+            color: #FFC107;
         }
 
         .dropdown {
@@ -83,14 +72,14 @@
         .dropdown-content {
             display: none;
             position: absolute;
-            background-color: #5A189A; /* Using your Vibrant Purple color for the dropdown */
+            background-color: #5A189A;
             min-width: 160px;
             box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
             z-index: 1;
         }
 
         .dropdown-content a {
-            color: #FFDACD; /* Peach for text */
+            color: #FFDACD;
             padding: 12px 16px;
             text-decoration: none;
             display: block;
@@ -102,31 +91,31 @@
         }
 
         .dropdown-content a:hover {
-            background-color: #FF5252; /* Red background for hover */
-            color: #FFC107; /* Gold text color for hover */
+            background-color: #FF5252;
+            color: #FFC107;
         }
 
         .description {
-            padding: 40px 10%;  /* Adds padding around the section, 10% from the left and right */
+            padding: 40px 10%;
             text-align: center;
-            background-color: #FFDACD; /* Peach background color for consistency */
+            background-color: #FFDACD;
         }
 
         .description h2 {
-            font-size: 2em;   /* Make the heading a bit larger */
-            margin-bottom: 20px; /* Add some space between the heading and paragraph */
+            font-size: 2em;
+            margin-bottom: 20px;
         }
 
         .description p {
-            font-size: 1.2em; /* Make the paragraph text slightly larger for better readability */
-            line-height: 1.6; /* Increase line height for better readability */
+            font-size: 1.2em;
+            line-height: 1.6;
         }
 
         .container {
             display: flex;
             justify-content: space-around;
-            padding: 40px 5%; 
-            background-color: #FFDACD; /* Peach */
+            padding: 40px 5%;
+            background-color: #FFDACD;
         }
 
         .main-content {
@@ -134,15 +123,15 @@
             margin: 0 20px;
             padding: 20px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-            background-color: #FFFFFF; /* White to contrast with the Peach background */
-            border-radius: 10px; /* Rounded corners */
+            background-color: #FFFFFF;
+            border-radius: 10px;
             text-align: center;
         }
 
         .main-content h3 {
             font-size: 1.5em;
             margin-bottom: 20px;
-            color: #5A189A; /* Vibrant Purple */
+            color: #5A189A;
         }
 
         .main-content p {
@@ -154,18 +143,17 @@
         .main-content a {
             display: inline-block;
             padding: 10px 20px;
-            background-color: #FF5252; /* Red */
-            color: #FFDACD; /* Peach */
+            background-color: #FF5252;
+            color: #FFDACD;
             text-decoration: none;
             border-radius: 5px;
             transition: background-color 0.3s;
         }
 
         .main-content a:hover {
-            background-color: #5A189A; /* Vibrant Purple */
+            background-color: #5A189A;
         }
 
-        /* Mobile Responsive Styles */
         @media (max-width: 768px) {
             .container {
                 flex-direction: column;
@@ -174,37 +162,35 @@
 
             .main-content {
                 margin-bottom: 20px;
-                width: 90%; /* Take up most of the screen width */
+                width: 90%;
             }
 
             nav {
-                flex-wrap: wrap; /* Allow items to wrap onto the next line */
+                flex-wrap: wrap;
             }
 
             nav a, .dropdown {
-                flex: 1 0 50%; /* They'll take up roughly half the width of the screen */
-                text-align: center; /* Center the text */
-                padding: 10px 0; /* Add some vertical padding */
+                flex: 1 0 50%;
+                text-align: center;
+                padding: 10px 0;
             }
 
             .description, .container {
-                padding-left: 5%; 
+                padding-left: 5%;
                 padding-right: 5%;
             }
 
             header h1 {
-                font-size: 1.5em; /* Reduce font size for the title */
+                font-size: 1.5em;
             }
 
             header p {
-                font-size: 1em; /* Reduce font size for the subtitle */
+                font-size: 1em;
             }
         }
     </style>
 </head>
-
 <body>
-
     <header>
         <a href="index.html">
             <img src="/images/logo3.png" alt="Rock Cancer Logo" style="max-width: 20%; height: auto;">
@@ -225,12 +211,11 @@
             </div>
         </div>
         <a href="https://www.bonfire.com/store/rock-cancer/">Shop</a>
-        <a href="faq.html">FAQ</a> 
-        <a href="calendar.html">Calendar</a> 
+        <a href="faq.html">FAQ</a>
+        <a href="calendar.html">Calendar</a>
         <a href="contact.html">Contact</a>
     </nav>
 
-    <!-- Embedded YouTube Video -->
     <div style="text-align: center; padding: 20px;">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/Fm6UuC73A8Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
@@ -264,7 +249,5 @@
         <a href="https://www.instagram.com/rockcancerofficial" title="Instagram" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
         <a href="contact.html" title="Message" target="_blank" rel="noopener noreferrer"><i class="far fa-envelope"></i></a>
     </footer>
-
 </body>
-
 </html>
